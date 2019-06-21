@@ -90,12 +90,13 @@ export default {
       padding: 10px 15px;
       border-radius: 5px;
       text-align: center;
-      font-size: 20px;
+      font-size: 16px;
       color: #ffffff;
       background-color: #535353;
       cursor: pointer;
       @media only screen and (min-width: 769px) {
         width: 325px;
+        font-size: 20px;
       }
       i {
         border: solid #ffffff;

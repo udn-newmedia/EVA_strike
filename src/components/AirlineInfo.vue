@@ -83,8 +83,7 @@ export default {
 
     }
     @media screen and (min-width: 521px) {
-      text-align: left;
-      padding-left: 30px;
+
     }
     @media screen and (min-width: 769px) {
       font-size: 21px;
@@ -134,25 +133,19 @@ export default {
       }
     }
     .bg-gray {
-    background-color: #F0F0F0;
+      background-color: #F0F0F0;
     }
-    .bg-white {
-      background-color: inherit;
+    .bg-whtie {
+      background-color: white;
     }
   }
   .airline-distribution {
     font-family: SegoeUI;
-    font-size: 13px;
+    font-size: 10px !important;
     text-align: center;
-    @media screen and (min-width: 321px) {
-
-    }
+    padding: 5px 0 10px 0;
     @media screen and (min-width: 521px) {
       text-align: left;
-      padding-left: 30px;
-    }
-    @media screen and (min-width: 769px) {
-      font-size: 15px;
     }
   }
   .EVA_website {

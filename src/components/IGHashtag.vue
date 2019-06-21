@@ -143,6 +143,7 @@ export default {
       padding: 10%;
       .caption {
         margin: 20px 0;
+        text-align: justify;
       }
     }
     .ig-carousel-wrapper {

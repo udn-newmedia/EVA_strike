@@ -7,9 +7,9 @@
         'sticky': enterFlag,
       }"
     >
-      <div :class="{'anchor': true, 'active': hrefPathName === '/tourists/' || hrefPathName === '/'}" @click="handleAnchorButtonClick('tourists')">旅客權益</div>
-      <div :class="{'anchor': true, 'active': hrefPathName === '/QA/'}" @click="handleAnchorButtonClick('QA')">為何罷工</div>
-      <div :class="{'anchor': true, 'active': hrefPathName === '/flightattendants/'}" @click="handleAnchorButtonClick('flightattendants')">空服人生</div>
+      <div v-scroll-to="'#anchor-container'" :class="{'anchor': true, 'active': hrefPathName === '/tourists/' || hrefPathName === '/'}" @click="handleAnchorButtonClick('tourists')">旅客權益</div>
+      <div v-scroll-to="'#anchor-container'" :class="{'anchor': true, 'active': hrefPathName === '/QA/'}" @click="handleAnchorButtonClick('QA')">為何罷工</div>
+      <div v-scroll-to="'#anchor-container'" :class="{'anchor': true, 'active': hrefPathName === '/flightattendants/'}" @click="handleAnchorButtonClick('flightattendants')">空服人生</div>
     </div>
   </div>
 </template>
@@ -39,7 +39,6 @@ export default {
     handleAnchorButtonClick(target) {
       this.$router.push({ path: `/${target}/` });
       this.hrefPathName = window.location.href.split('#')[1];
-      this.goTop();
       this.sendGA(target);
     },
     sendGA(target) {
@@ -49,10 +48,6 @@ export default {
         "eventAction": "click",
         "eventLabel": "[" + Utils.detectPlatform() + "] [" + document.querySelector('title').innerHTML + "] [point_" + target + "]"
       });
-    },
-    goTop() {
-      const scrollDistance = window.innerHeight;
-      window.scroll(0, scrollDistance);
     },
     handleScroll() {
       if (

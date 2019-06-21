@@ -1,8 +1,10 @@
 import Vue from 'vue';
 import App from './App.vue';
 import router from './router';
-import VueScrollTo from 'vue-scrollto'
- 
+import VueScrollTo from 'vue-scrollto';
+import "babel-polyfill";
+import 'whatwg-fetch';
+
 Vue.config.productionTip = false;
 // You can also pass in the default options
 Vue.use(VueScrollTo, {
