@@ -1,28 +1,33 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Indicator></Indicator>
+    <HeadBar projectHref="https://udn.com/upf/newmedia/2019_data/EVA_strike">
+    </HeadBar>
+    <Cover></Cover>
+    <Anchor></Anchor>
+    <router-view/>
+    <Foot></Foot>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Anchor from './components/Anchor.vue';
+import Cover from './components/Cover.vue';
+import Foot from './components/Foot.vue';
+import HeadBar from './components/HeadBar.vue';
+import Indicator from './components/Indicator.vue';
 export default {
   name: 'app',
   components: {
-    HelloWorld
-  }
-}
+    Anchor,
+    Cover,
+    Foot,
+    HeadBar,
+    Indicator,
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
