@@ -8,7 +8,7 @@
     <div class="continued-button-wrapper">
       <a href="#" v-scroll-to="'#anchor-container'">
         <div class="continued-button">
-          <div>了解旅客權益&空服員為何罷工</div>
+          <div>點按看旅客權益&空服員為何罷工</div>
             <div class="toggle-wrapper">
                 <i class="toggle-bottom"></i>
             </div>
@@ -36,7 +36,16 @@ export default {
     position: relative;
     width: 100%;
     height: 100vh;
-    padding-top: 50px;
+    background-size: cover;
+    @media screen and (min-width: 321px) {
+
+    }
+    @media screen and (min-width: 521px) {   
+      left: 20%;
+    }
+    @media screen and (min-width: 769px) {
+      left: 30%;
+    }
   }
 
   .title-wrapper {
@@ -44,10 +53,17 @@ export default {
     width: 100%;
     font-size: 38px;
     font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+    @media screen and (min-width: 321px) {
+
+    }
+    @media screen and (min-width: 521px) {   
+
+    }
     @media only screen and (min-width: 769px) {
-      display: flex;
-      justify-content: center;
-      font-size: 50px;
+      font-size: 36px;
     }
   }
 
@@ -57,6 +73,15 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    @media screen and (min-width: 321px) {
+
+    }
+    @media screen and (min-width: 521px) {   
+      
+    }
+    @media screen and (min-width: 769px) {
+      padding-top: 75px;
+    }
     a{
       text-decoration: none;
     }

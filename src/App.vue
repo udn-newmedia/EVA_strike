@@ -3,9 +3,11 @@
     <Indicator></Indicator>
     <HeadBar projectHref="https://udn.com/upf/newmedia/2019_data/EVA_strike">
     </HeadBar>
-    <Content>
-      <Cover></Cover>
-    </Content>
+    <div class="content-wrapper">
+      <Content>
+        <Cover></Cover>
+      </Content>
+    </div> 
     <Anchor></Anchor>
     <router-view/>
 
@@ -20,6 +22,8 @@ import Content from './components/Content.vue';
 import Foot from './components/Foot.vue';
 import HeadBar from './components/HeadBar.vue';
 import Indicator from './components/Indicator.vue';
+import srcRWD from './mixin/srcRWD.js';
+
 export default {
   name: 'app',
   components: {
@@ -30,10 +34,24 @@ export default {
     HeadBar,
     Indicator,
   },
+  mixins: [srcRWD]
 };
 </script>
 
 <style lang="scss">
+  .content-wrapper  {
+    background-image: url("../public/images/cover-mob.jpg");
+    background-size: cover;
+    @media screen and (min-width: 321px) {
+
+    }
+    @media screen and (min-width: 521px) {   
+      background-image: url("../public/images/cover-web.jpg");
+    }
+    @media screen and (min-width: 769px) {
+      
+    }
+  }
   .slick-slide {
     display: none;
     float: left;

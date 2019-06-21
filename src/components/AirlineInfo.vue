@@ -4,8 +4,6 @@
       <ul class="airline-lists">
         <li :class="{'bg-gray': index % 2 === 0, 'bg-whtie': index % 2 !== 0 }" :value="item.DepartureRemark" class="airline-list" v-for="(item, index) in flights" :key="item.UpdateTime">
             <div class="list-content">
-              機場： 桃園國際機場 <br>
-              航空公司：{{ item.AirlineID }} <br>
               航班編號：{{ item.FlightNumber }} <br>
               原定到達時間：{{ item.ScheduleArrivalTime }}<br>
               最新更新時間：<br>{{ item.UpdateTime }} <br>
@@ -28,7 +26,7 @@ export default {
   props: {
     airlineTitle: {
       type: String,
-      default: '即時航班資訊'
+      default: '桃園國際機場即時航班資訊'
     },
   },
   mounted () {
@@ -65,14 +63,28 @@ export default {
 .airline {
   width: 100%;
   font-family: inherit;
+  
+  @media screen and (min-width: 321px) {
+
+  }
+  @media screen and (min-width: 521px) {
+    margin: 0 auto;
+    width: 50%;
+  }
+  @media screen and (min-width: 769px) {
+
+  }
   .airline-title {
     font-size: 18px;
     margin: 7.5px 0;
+    color: #F0F0F0;
+    text-align: center;
     @media screen and (min-width: 321px) {
 
     }
     @media screen and (min-width: 521px) {
-
+      text-align: left;
+      padding-left: 30px;
     }
     @media screen and (min-width: 769px) {
       font-size: 21px;
@@ -117,6 +129,7 @@ export default {
         .mark {
           background-color: inherit;
           color: #00832C;
+          padding: 0;
         }
       }
     }
@@ -130,11 +143,13 @@ export default {
   .airline-distribution {
     font-family: SegoeUI;
     font-size: 13px;
+    text-align: center;
     @media screen and (min-width: 321px) {
 
     }
     @media screen and (min-width: 521px) {
-
+      text-align: left;
+      padding-left: 30px;
     }
     @media screen and (min-width: 769px) {
       font-size: 15px;
