@@ -39,15 +39,20 @@ export default {
     handleAnchorButtonClick(target) {
       this.$router.push({ path: `/${target}/` });
       this.hrefPathName = window.location.href.split('#')[1];
+      this.goTop();
       this.sendGA(target);
     },
     sendGA(target) {
       window.ga("newmedia.send", {
         "hitType": "event",
-        "eventCategory": "headBar",
+        "eventCategory": "Anchor point",
         "eventAction": "click",
-        "eventLabel": "[" + Utils.detectPlatform() + "] [" + document.querySelector('title').innerHTML + "] [" + target + "] [page click]"
+        "eventLabel": "[" + Utils.detectPlatform() + "] [" + document.querySelector('title').innerHTML + "] [point_" + target + "]"
       });
+    },
+    goTop() {
+      const scrollDistance = window.innerHeight;
+      window.scroll(0, scrollDistance);
     },
     handleScroll() {
       if (

@@ -5,6 +5,7 @@
     </HeadBar>
     <Content>
       <Cover></Cover>
+      <Share href="https://udn.com/upf/newmedia/2019_data/EVA_strike"></Share>
     </Content>
     <Anchor></Anchor>
     <router-view/>
