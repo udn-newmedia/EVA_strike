@@ -23,7 +23,7 @@ export default {
   position: relative;
   z-index: 50;
   width: 100%;
-  padding: 64px 15px;
+  padding: 20px 15px 64px 15px;
   margin: 0 auto;
   @media (min-width: 768px) and (max-width: 1023px) {
     padding: 64px 100px;
