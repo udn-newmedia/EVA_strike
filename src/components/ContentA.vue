@@ -38,7 +38,7 @@
       <Content style="background: transparent;">
         <h3 class="mt-3 mb-3">如果你想未雨綢繆......</h3>
         <p class="bold mt-3 mb-3">個人旅客：</p>
-        <p>若欲搭乘的航班尚未受影響，退改票原則上依購買機票時的退改票規定辦理，<span class="bold">會有手續費」</span>。</p>
+        <p>若欲搭乘的航班尚未受影響，退改票原則上依購買機票時的退改票規定辦理，<span class="bold">會有手續費</span>。</p>
         <p class="bold mt-3 mb-3">團體旅客：</p>
         <p>洽各旅行社。但旅行社「易遊網」指出，尚未受影響的航班不確定性較大，建議<span class="bold">依照原訂日期和時間至機場集合</span>，以維護自身權益。</p>
       </Content>

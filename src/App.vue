@@ -1,18 +1,19 @@
 <template>
   <div id="app">
     <Indicator></Indicator>
-    <HeadBar projectHref="https://udn.com/upf/newmedia/2019_data/EVA_strike">
+    <HeadBar projectHref="https://udn.com/upf/newmedia/2019_data/EVA_strike/#/">
     </HeadBar>
     <div class="content-wrapper">
       <Content>
         <Cover></Cover>
+        <Share href="https://udn.com/upf/newmedia/2019_data/EVA_strike/#/"></Share>
       </Content>
     </div> 
     <Anchor></Anchor>
     <router-view/>
     <Content>
       <Editor>
-        <Share href="https://udn.com/upf/newmedia/2019_data/EVA_strike"></Share>
+        <Share href="https://udn.com/upf/newmedia/2019_data/EVA_strike/#/"></Share>
         <Logo></Logo>
         <p><br></p>
         <div>製作人：林秀姿、蔡佩蓉、洪欣慈</div>
@@ -22,7 +23,7 @@
         <div>2019.06.21</div>
       </Editor>
       <p><br></p>
-      <FBComment href="https://udn.com/upf/newmedia/2019_data/EVA_strike"></FBComment>
+      <FBComment href="https://udn.com/upf/newmedia/2019_data/EVA_strike/#/"></FBComment>
     </Content>
     <Foot></Foot>
   </div>
