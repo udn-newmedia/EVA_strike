@@ -86,7 +86,7 @@ export default {
   }
 
   .anchor-wrapper {
-    z-index: 9999;
+    z-index: 9998;
     height: 50px;
     display: flex;
     justify-content: center;

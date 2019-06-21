@@ -118,10 +118,10 @@ export default {
 
         }
         @media screen and (min-width: 521px) {
-          width: 60%;
+   
         }
         @media screen and (min-width: 769px) {
-          width: 60%;
+    
           font-size: 21px;
           line-height: 1.43;
         }

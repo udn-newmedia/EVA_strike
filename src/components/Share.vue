@@ -37,7 +37,7 @@ export default {
     shareToLine() {
       if (detectMob()) {
         // 手機
-        window.open(`https://line.me/R/msg/text/?"${document.querySelector('title').innerHTML}%0D%0A%0D%0A${document.querySelector('meta[property="og:description"]').content}%0D%0A%0D%0A${this.setProps('href')}`);
+        window.open(`https://line.me/R/msg/text/?${document.querySelector('title').innerHTML}%0D%0A%0D%0A${document.querySelector('meta[property="og:description"]').content}%0D%0A%0D%0A${this.setProps('href')}`);
       } else {
         window.open(`https://lineit.line.me/share/ui?url=${this.setProps('href')}`);
       }
