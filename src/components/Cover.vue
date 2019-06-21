@@ -5,13 +5,15 @@
       <div class="title-bottom">你該知道的事</div>
     </div>
     <AirlineInfo></AirlineInfo>
-    <div class="continued-button-wrapper" @click="handleReadMore()">
-      <div class="continued-button">
-        <div>了解旅客權益&空服員為何罷工</div>
-        <div class="toggle-wrapper">
-          <i class="toggle-bottom"></i>
+    <div class="continued-button-wrapper">
+      <a href="#" v-scroll-to="'#anchor-container'">
+        <div class="continued-button">
+          <div>了解旅客權益&空服員為何罷工</div>
+            <div class="toggle-wrapper">
+                <i class="toggle-bottom"></i>
+            </div>
         </div>
-      </div>
+      </a> 
     </div>
   </div>
 </template>
@@ -25,10 +27,6 @@ export default {
     AirlineInfo,
   },
   methods: {
-    handleReadMore() {
-      const scrollDistance = window.innerHeight;
-      window.scroll(0, scrollDistance);
-    },
   },
 }
 </script>
@@ -59,7 +57,9 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    a{
+      text-decoration: none;
+    }
     .continued-button {
       width: 100%;
       padding: 10px 15px;
