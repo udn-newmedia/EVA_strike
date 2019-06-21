@@ -61,7 +61,7 @@
         </div>
         <div class="news-link-card">
           <div class="image-wrapper">
-            <img src="images/photo5.jpg" alt="空服員照片">
+            <img src="images/photo6.jpg" alt="空服員照片">
           </div>
           <div class="card-body">
             <div class="card-title">
@@ -75,7 +75,6 @@
     
     <div class="ig-comment-wrapper">
       <Content>
-        <h2>Instagram討論區</h2>
         <IGHashtag :hashtag="['長榮', '長榮罷工']"></IGHashtag>
       </Content>
     </div>
