@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import Utils from 'udn-newmedia-utils'
+import Utils from 'udn-newmedia-utils';
 
 export default {
   name: 'Anchor',

@@ -2,6 +2,7 @@
   <div class="ig-hashtag-container">
     <h2>Instagram討論區</h2>
     <h3>#{{hashtag[0]}} #{{hashtag[1]}}</h3>
+    <p v-if="isMob">（左右滑動）</p>
     <div class="ig-carousel-wrapper">
       <div v-if="!fetchCompleteFlag" class="loader-wrapper">
         <div class="loader"></div>

@@ -30,6 +30,7 @@
 import Anchor from './components/Anchor.vue';
 import Cover from './components/Cover.vue';
 import Content from './components/Content.vue';
+import Editor from './components/Editor.vue';
 import FBComment from './components/FBComment.vue';
 import Foot from './components/Foot.vue';
 import HeadBar from './components/HeadBar.vue';
@@ -42,6 +43,7 @@ export default {
     Anchor,
     Content,
     Cover,
+    Editor,
     FBComment,
     Foot,
     HeadBar,
