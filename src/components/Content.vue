@@ -23,13 +23,13 @@ export default {
   position: relative;
   z-index: 50;
   width: 100%;
-  padding: 0 15px 64px 15px;
+  padding: 64px 15px;
   margin: 0 auto;
   @media (min-width: 768px) and (max-width: 1023px) {
-    padding: 0 100px 64px 100px;
+    padding: 64px 100px;
   }
   @media screen and (min-width: 1024px) {
-    padding: 0 0 84px 0;
+    padding: 84px 0;
   }
 }
 .article{
