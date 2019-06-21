@@ -87,7 +87,7 @@
           </div>
           <hr>
           <div class="row">
-            <div class="col-left"><p>國外返台</p></div>
+            <div class="col-left"><p>國外返台&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></div>
             <div class="col-right"><p>只要符合理賠條件皆陪</p></div>
           </div>
         </div>
