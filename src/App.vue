@@ -5,9 +5,10 @@
     </HeadBar>
     <Content>
       <Cover></Cover>
-      <Anchor></Anchor>
     </Content>
+    <Anchor></Anchor>
     <router-view/>
+
     <Foot></Foot>
   </div>
 </template>

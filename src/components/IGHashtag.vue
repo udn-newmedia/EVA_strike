@@ -1,10 +1,7 @@
 <template>
   <div class="ig-hashtag-container">
-    <h1>Hashtag:{{hashtag}}</h1>
-    <br>
-    <br>
-    <br>
-    <br>
+    <h2>Instagram討論區</h2>
+    <h3>#{{hashtag}}</h3>
     <div class="ig-carousel-wrapper">
       <Slick
         v-if="fetchCompleteFlag"
@@ -65,7 +62,6 @@ export default {
         .then(res => {
           // console.log(res.graphql.hashtag.edge_hashtag_to_top_posts);
           // console.log(res.graphql.hashtag.edge_hashtag_to_media.edges);
-
           for (let i = 0; i < fetchAmount; i++) {
             hashtagToMediaList.push({
               'caption': res.graphql.hashtag.edge_hashtag_to_top_posts.edges[i].node.edge_media_to_caption.edges[0].node.text,
@@ -89,10 +85,12 @@ export default {
 <style lang="scss" scoped>
   .ig-hashtag-container {
     width: 100%;
-    overflow: hidden;
-
+    text-align: center;
     .post-wrapper {
-      width: 80vw;
+      padding: 10%;
+      .caption {
+        margin: 20px 0;
+      }
     }
   }
 </style>
