@@ -33,5 +33,11 @@ export default {
 </script>
 
 <style lang="scss">
-
+  .slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    outline: none !important;
+  }
 </style>
