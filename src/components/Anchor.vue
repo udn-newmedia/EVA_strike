@@ -1,15 +1,15 @@
 <template>
   <div id="anchor-container" class="anchor-container">
-    <div class="anchor-sup-wrapper"></div>
+    <div v-if="enterFlag" class="anchor-sup-wrapper"></div>
     <div
       :class="{
         'anchor-wrapper': true,
         'sticky': enterFlag,
       }"
     >
-      <div class="anchor" @click="handleAnchorButtonClick('tourists')">旅客權益</div>
-      <div class="anchor" @click="handleAnchorButtonClick('QA')">為何罷工</div>
-      <div class="anchor" @click="handleAnchorButtonClick('flightattendants')">空服人生</div>
+      <div :class="{'anchor': true, 'active': hrefPathName === '/tourists/' || hrefPathName === '/'}" @click="handleAnchorButtonClick('tourists')">旅客權益</div>
+      <div :class="{'anchor': true, 'active': hrefPathName === '/QA/'}" @click="handleAnchorButtonClick('QA')">為何罷工</div>
+      <div :class="{'anchor': true, 'active': hrefPathName === '/flightattendants/'}" @click="handleAnchorButtonClick('flightattendants')">空服人生</div>
     </div>
   </div>
 </template>
@@ -32,11 +32,13 @@ export default {
   data() {
     return {
       enterFlag: false,
+      hrefPathName: '',
     };
   },
   methods: {
     handleAnchorButtonClick(target) {
       this.$router.push({ path: `/${target}/` });
+      this.hrefPathName = window.location.href.split('#')[1];
       this.sendGA(target);
     },
     sendGA(target) {
@@ -60,6 +62,7 @@ export default {
     },
   },
   mounted() {
+    this.hrefPathName = window.location.href.split('#')[1];
     window.addEventListener('scroll', this.handleScroll);
   },
   destroyed() {
@@ -71,6 +74,11 @@ export default {
 <style lang="scss" scoped>
 .anchor-container{
   position: relative;
+  width: 100%;
+  height: 58px;
+  @media only screen and (min-width: 769px) {
+    height: 100px;
+  }
   .anchor-sup-wrapper {
     position: relative;
     width: 100%;
@@ -78,11 +86,29 @@ export default {
   }
 
   .anchor-wrapper {
+    z-index: 5001;
+    height: 58px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    background-color: #d4d4d4;
+    @media only screen and (min-width: 769px) {
+      height: 100px;
+    }
     .anchor {
+      font-size: 21px;
+      color: #707070;
+      border-bottom: 1px solid #ff6f0000;
+      transition: .333s ease-in-out;
       cursor: pointer;
+    }
+    .anchor:hover {
+      color: #ff6f0099;
+    }
+    .active {
+      font-weight: bold;
+      color: #ff6f00;
+      border-bottom: 1px solid #ff6f00ff;
     }
   }
 
@@ -101,7 +127,7 @@ export default {
       transform: scale(1);
     }
     50% {
-      transform: scale(1.2);
+      transform: scale(1.1);
     }
     100% {
       transform: scale(1);

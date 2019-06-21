@@ -6,8 +6,8 @@
     <Content>
       <Cover></Cover>
       <Anchor></Anchor>
-      <router-view/>
     </Content>
+    <router-view/>
     <Foot></Foot>
   </div>
 </template>
@@ -32,6 +32,6 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 
 </style>
