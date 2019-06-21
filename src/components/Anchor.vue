@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import Utils from 'udn-newmedia-utils'
+import Utils from 'udn-newmedia-utils';
 
 export default {
   name: 'Anchor',
@@ -39,15 +39,20 @@ export default {
     handleAnchorButtonClick(target) {
       this.$router.push({ path: `/${target}/` });
       this.hrefPathName = window.location.href.split('#')[1];
+      this.goTop();
       this.sendGA(target);
     },
     sendGA(target) {
       window.ga("newmedia.send", {
         "hitType": "event",
-        "eventCategory": "headBar",
+        "eventCategory": "Anchor point",
         "eventAction": "click",
-        "eventLabel": "[" + Utils.detectPlatform() + "] [" + document.querySelector('title').innerHTML + "] [" + target + "] [page click]"
+        "eventLabel": "[" + Utils.detectPlatform() + "] [" + document.querySelector('title').innerHTML + "] [point_" + target + "]"
       });
+    },
+    goTop() {
+      const scrollDistance = window.innerHeight;
+      window.scroll(0, scrollDistance);
     },
     handleScroll() {
       if (
@@ -86,21 +91,27 @@ export default {
   }
 
   .anchor-wrapper {
-    z-index: 5001;
-    height: 58px;
+    z-index: 9999;
+    height: 50px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    background-color: #d4d4d4;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
     @media only screen and (min-width: 769px) {
-      height: 100px;
+      height: 58px;
     }
     .anchor {
-      font-size: 21px;
+      margin: 0 15px;
+      font-size: 18px;
       color: #707070;
       border-bottom: 1px solid #ff6f0000;
       transition: .333s ease-in-out;
       cursor: pointer;
+      @media only screen and (min-width: 769px) {
+        margin: 0 10%;
+        font-size: 21px;
+      }
     }
     .anchor:hover {
       color: #ff6f0099;

@@ -12,7 +12,7 @@
             <div class="card-title">
               <h3>飛安要顧，屁股也要擦？我才不稀罕當空姐！</h3>
             </div>
-            <div class="card-text">以在上位者姿態頤指氣使的機長、予取予求的乘客，空服員必須以完美的笑容面對一切，燦爛的笑容底下，身心早已斑駁不已。<span style="color: #ff6f00;"><a title="閱讀全文" href="https://ubrand.udn.com/ubrand/story/11815/3783393">閱讀全文</a></span></div>
+            <div class="card-text">以在上位者姿態頤指氣使的機長、予取予求的乘客，空服員必須以完美的笑容面對一切，燦爛的笑容底下，身心早已斑駁不已。<span style="color: #ff6f00;" @click="sendGA(1)"><a title="閱讀全文" href="https://ubrand.udn.com/ubrand/story/11815/3783393" target="_blank">閱讀全文</a></span></div>
           </div>
         </div>
         <div class="news-link-card">
@@ -23,7 +23,7 @@
             <div class="card-title">
               <h3>罷工怒火為何再起？未能從勞資爭議成長的長榮公司</h3>
             </div>
-            <div class="card-text">長榮在罷工投票前夕，開始言詞恫嚇，警告若因工會罷工導致獲利下滑，將暫停年終獎金與年度調薪，資方煽動勞資對立，無助解決勞資爭議。<span style="color: #ff6f00;"><a title="閱讀全文" href="https://opinion.udn.com/opinion/story/10124/3808112">閱讀全文</a></span></div>
+            <div class="card-text">長榮在罷工投票前夕，開始言詞恫嚇，警告若因工會罷工導致獲利下滑，將暫停年終獎金與年度調薪，資方煽動勞資對立，無助解決勞資爭議。<span style="color: #ff6f00;" @click="sendGA(2)"><a title="閱讀全文" href="https://opinion.udn.com/opinion/story/10124/3808112" target="_blank">閱讀全文</a></span></div>
           </div>
         </div>
         <div class="news-link-card">
@@ -34,7 +34,7 @@
             <div class="card-title">
               <h3>黑色天空企業：日本航空業的「過勞機師」實態</h3>
             </div>
-            <div class="card-text">近30年來航空技術的進步，讓民航機越飛越久、越飛越遠，動輒可飛行16小時以上。雖然方便旅客無須轉機，但卻也苦了飛行員。<span style="color: #ff6f00;"><a title="閱讀全文" href="https://global.udn.com/global_vision/story/8664/3646003">閱讀全文</a></span></div>
+            <div class="card-text">近30年來航空技術的進步，讓民航機越飛越久、越飛越遠，動輒可飛行16小時以上。雖然方便旅客無須轉機，但卻也苦了飛行員。<span style="color: #ff6f00;" @click="sendGA(3)"><a title="閱讀全文" href="https://global.udn.com/global_vision/story/8664/3646003" target="_blank">閱讀全文</a></span></div>
           </div>
         </div>
         <div class="news-link-card">
@@ -45,7 +45,7 @@
             <div class="card-title">
               <h3>聽廣播／法國航空罷工：魚死網破的勞資惡鬥？</h3>
             </div>
-            <div class="card-text">要求加薪的勞工們始終無法與資方達成協議，航班停擺、股價暴跌之下，竟演變成魚死網破的局面......<span style="color: #ff6f00;"><a title="閱讀全文" href="https://global.udn.com/global_vision/story/8663/3151861">閱讀全文</a></span></div>
+            <div class="card-text">要求加薪的勞工們始終無法與資方達成協議，航班停擺、股價暴跌之下，竟演變成魚死網破的局面......<span style="color: #ff6f00;" @click="sendGA(4)"><a title="閱讀全文" href="https://global.udn.com/global_vision/story/8663/3151861" target="_blank">閱讀全文</a></span></div>
           </div>
         </div>
         <div class="news-link-card">
@@ -56,7 +56,7 @@
             <div class="card-title">
               <h3>華航機師罷工：工會欠人民一個預告嗎？</h3>
             </div>
-            <div class="card-text">高薪亮眼機師、工時這麼少啊到底累什麼？理由很簡單：你們罷工真的礙到我了！回顧一下華航在春節期間的罷工爭議......<span style="color: #ff6f00;"><a title="閱讀全文" href="https://opinion.udn.com/opinion/story/12705/3638918">閱讀全文</a></span></div>
+            <div class="card-text">高薪亮眼機師、工時這麼少啊到底累什麼？理由很簡單：你們罷工真的礙到我了！回顧一下華航在春節期間的罷工爭議......<span style="color: #ff6f00;" @click="sendGA(5)"><a title="閱讀全文" href="https://opinion.udn.com/opinion/story/12705/3638918" target="_blank">閱讀全文</a></span></div>
           </div>
         </div>
         <div class="news-link-card">
@@ -67,7 +67,7 @@
             <div class="card-title">
               <h3>低工時的幸福人生從哪來？「瑞典模式」的勞資協議文化</h3>
             </div>
-            <div class="card-text">瑞典的低工時幸福人生，並非上天掉下來的禮物。而是經歷了勞資雙方劍拔弩張、社會動盪的不安歲月......<span style="color: #ff6f00;"><a title="閱讀全文" href="https://global.udn.com/global_vision/story/8663/2943423">閱讀全文</a></span></div>
+            <div class="card-text">瑞典的低工時幸福人生，並非上天掉下來的禮物。而是經歷了勞資雙方劍拔弩張、社會動盪的不安歲月......<span style="color: #ff6f00;" @click="sendGA(6)"><a title="閱讀全文" href="https://global.udn.com/global_vision/story/8663/2943423" target="_blank">閱讀全文</a></span></div>
           </div>
         </div>
       </div>
@@ -82,6 +82,7 @@
 </template>
 
 <script>
+import Utils from 'udn-newmedia-utils';
 import Content from './Content.vue';
 import IGHashtag from './IGHashtag.vue';
 export default {
@@ -89,6 +90,16 @@ export default {
   components: {
     Content,
     IGHashtag,
+  },
+  methods: {
+    sendGA(index) {
+      window.ga('newmedia.send', {
+        hitType: 'event',
+        eventCategory: 'Related',
+        eventAction: 'click',
+        eventLabel: `[${Utils.detectPlatform()}] [article${index}]`,
+      });
+    },
   },
 };
 </script>
@@ -107,6 +118,7 @@ export default {
       @media only screen and (min-width: 769px) {
         display: flex;
         flex-direction: row-reverse;
+        justify-content: space-around;
       }
       .image-wrapper {
         padding: 0 20px;
@@ -117,16 +129,14 @@ export default {
         img {
           width: 80%;
           @media only screen and (min-width: 769px) {
-            width: auto;
-            height: 100%;
+            width: 300px;
+            height: auto;
           }
         }
       }
 
       .card-body {
-        @media only screen and (min-width: 769px) {
-          width: 100%;
-        }
+        position: relative;
         .card-title {
           margin: 15px 0;
           h3 {
