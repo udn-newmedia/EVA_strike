@@ -23,6 +23,8 @@ export default {
 
   .title-wrapper {
     position: relative;
+    font-size: 50px;
+    font-weight: bold;
     @media only screen and (min-width: 769px) {
       display: flex;
     }
