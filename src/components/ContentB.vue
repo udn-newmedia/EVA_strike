@@ -51,7 +51,7 @@
     
     <div class="container-gray">
       <Content style="background: transparent;">
-        <h3 class="mt-3 mb-3 text-align-center fz-40">一張表看懂 長榮勞資爭議</h3>
+        <h3 class="mt-3 mb-3 text-align-center fz-40">看懂長榮勞資爭議</h3>
 
         <p class="bold fz-21-25">1.日支費調高</p>
         <p class="bold">工會訴求：日支費應調高為每小時新臺幣150元，非會員不得比照適用</p>

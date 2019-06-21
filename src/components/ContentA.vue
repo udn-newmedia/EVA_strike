@@ -10,7 +10,7 @@
 
     <div class="container-gray">
       <Content style="background: transparent;">
-        <h3 class="mt-3 mb-3">人在台灣出不去</h3>
+        <h3 class="mt-3 mb-3">如果你人困在台灣......</h3>
         <p class="bold mt-3 mb-3">個人旅客：</p>
         <p>1. <span class="bold">可「免手續費」</span>辦理退改票或簽轉其他航班。</p>
         <p>2. 隨時留意機場廣播及航空公司公告的處理辦法，有食宿需求可向航空公司提出。</p>
@@ -23,7 +23,7 @@
     </div>
 
     <Content>
-      <h3 class="mt-3 mb-3">人在海外被困住</h3>
+      <h3 class="mt-3 mb-3">如果你人困在海外......</h3>
       <p class="bold mt-3 mb-3">個人旅客：</p>
       <p>1. <span class="bold">可「免手續費」</span>辦理退改票或簽轉其他航班。</p>
       <p>2. 若有<span class="bold">食宿需求</span>可向航空公司提出，航空公司應協助處理。</p>
@@ -36,7 +36,7 @@
 
     <div class="container-gray">
       <Content style="background: transparent;">
-        <h3 class="mt-3 mb-3">想未雨綢繆</h3>
+        <h3 class="mt-3 mb-3">如果你想未雨綢繆......</h3>
         <p class="bold mt-3 mb-3">個人旅客：</p>
         <p>若欲搭乘的航班尚未受影響，退改票原則上依購買機票時的退改票規定辦理，<span class="bold">會有手續費」</span>。</p>
         <p class="bold mt-3 mb-3">團體旅客：</p>
@@ -96,7 +96,7 @@
 
       <p class="mt-3 mb-3">3. 申請班機延誤證明：可利用長榮航空公司官網\<a href="https://booking.evaair.com/flyeva/EVA/B2C/flight-status.aspx" target="_blank" class="colorGreen text-decoration">班機實際到離</a>\<a href="https://booking.evaair.com/flyeva/EVA/B2C/flight-status.aspx?tab=4" target="_blank" class="colorGreen text-decoration">航班離到場證明</a>功能自行列印，或聯繫長榮航空各地服務中心申請。</p>
 
-      <h3 class="mt-3 mb-3">有投保「旅遊不便險」者</h3>
+      <h3 class="mt-3 mb-3">消費糾紛申訴管道</h3>
       <p>1. 消基會長榮罷工申訴專線：02-27001234</p>
       <p>2. 行政院消費者保護會網站<a href="https://cpc.ey.gov.tw/Page/27091D3670230874" target="_blank" class="colorGreen text-decoration">線上申訴</a></p>
       <p>3. 團體旅客：檢附相關收據及契約以書面向旅行業品保協會（台北市民權東路2段9號5F）或觀光局（台北市忠孝東路4段290號9樓）申訴</p>
