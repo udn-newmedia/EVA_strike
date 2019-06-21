@@ -13,7 +13,6 @@
         <Share href="https://udn.com/upf/newmedia/2019_data/EVA_strike"></Share>
         <Logo></Logo>
         <p><br></p>
-        <div>製作團隊</div>
         <div>製作人：林秀姿、蔡佩蓉、洪欣慈</div>
         <div>視覺設計：蘇士堯</div>
         <div>網頁製作：胡凈悟、楊若榆、謝化挺</div>

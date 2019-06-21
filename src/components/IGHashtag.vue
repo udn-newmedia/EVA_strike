@@ -28,6 +28,18 @@
           <div class="caption">{{item.caption}}</div>
         </div>
       </Slick>
+      <div v-if="!isMob" v-show="fetchCompleteFlag" class="direction-button-container">
+        <div class="direction-button-wrapper prev">
+          <div class="direction-button pre-button" @click="goPrevious()">
+            <i class="arrow left"></i>
+          </div>
+        </div>
+        <div class="direction-button-wrapper next">
+          <div class="direction-button next-button" @click="goNext()">
+            <i class="arrow right"></i>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -53,6 +65,11 @@ export default {
       hashtagToMediaList: [],
       fetchCompleteFlag: false,
     };
+  },
+  computed: {
+    isMob() {
+      return window.innerWidth > 768 ? false : true;
+    },
   },
   methods: {
     fetchPostListFisrt(target) {
@@ -103,6 +120,12 @@ export default {
         })
         .catch(err => console.log(err));
     },
+    goPrevious() {
+      this.$refs.slick.prev();
+    },
+    goNext() {
+      this.$refs.slick.next();
+    }
   },
   created() {
     this.fetchPostListFisrt(this.hashtag[0]);
@@ -112,6 +135,7 @@ export default {
 
 <style lang="scss" scoped>
   .ig-hashtag-container {
+    position: relative;
     width: 100%;
     text-align: center;
     .post-wrapper {
@@ -119,6 +143,9 @@ export default {
       .caption {
         margin: 20px 0;
       }
+    }
+    .ig-carousel-wrapper {
+      position: relative;
     }
   }
   .loader-wrapper {
@@ -144,6 +171,56 @@ export default {
         0% { transform: rotate(0deg); }
         100% { transform: rotate(360deg); }
       }
+    }
+  }
+
+  .direction-button-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .direction-button-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+
+      .direction-button {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
+        border-radius: 50%;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .3);
+        cursor: pointer;
+        i {
+          border: solid black;
+          border-width: 0 3px 3px 0;
+          display: inline-block;
+          padding: 3px;
+        }
+        .right {
+          transform: rotate(-45deg);
+          -webkit-transform: rotate(-45deg);
+        }
+
+        .left {
+          transform: rotate(135deg);
+          -webkit-transform: rotate(135deg);
+        }
+      }
+    }
+    .prev {
+      margin-left: 10%;
+    }
+    .next {
+      margin-right: 10%;
     }
   }
 </style>

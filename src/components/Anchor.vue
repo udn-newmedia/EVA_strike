@@ -91,7 +91,8 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #d4d4d4;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
     @media only screen and (min-width: 769px) {
       height: 58px;
     }
