@@ -86,21 +86,26 @@ export default {
   }
 
   .anchor-wrapper {
-    z-index: 5001;
-    height: 58px;
+    z-index: 9999;
+    height: 50px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     background-color: #d4d4d4;
     @media only screen and (min-width: 769px) {
-      height: 100px;
+      height: 58px;
     }
     .anchor {
-      font-size: 21px;
+      margin: 0 15px;
+      font-size: 18px;
       color: #707070;
       border-bottom: 1px solid #ff6f0000;
       transition: .333s ease-in-out;
       cursor: pointer;
+      @media only screen and (min-width: 769px) {
+        margin: 0 10%;
+        font-size: 21px;
+      }
     }
     .anchor:hover {
       color: #ff6f0099;
