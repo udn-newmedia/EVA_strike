@@ -7,9 +7,9 @@
               機場： 桃園國際機場 <br>
               航空公司：{{ item.AirlineID }} <br>
               航班編號：{{ item.FlightNumber }} <br>
-              航班狀態：{{ item.ArrivalRemark }} <br>
               原定到達時間：{{ item.ScheduleArrivalTime }}<br>
-              最新更新時間：<br>{{ item.UpdateTime }}
+              最新更新時間：<br>{{ item.UpdateTime }} <br>
+              <span class="mark">航班狀態：{{ item.ArrivalRemark }}</span><br>
             </div>
         </li>
       </ul>
@@ -114,10 +114,14 @@ export default {
           font-size: 21px;
           line-height: 1.43;
         }
+        .mark {
+          background-color: inherit;
+          color: #00832C;
+        }
       }
     }
     .bg-gray {
-    background-color: #707070;
+    background-color: #F0F0F0;
     }
     .bg-white {
       background-color: inherit;
