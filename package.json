@@ -13,7 +13,8 @@
     "lodash.throttle": "^4.1.1",
     "udn-newmedia-utils": "^1.1.0",
     "vue": "^2.6.10",
-    "vue-router": "^3.0.6"
+    "vue-router": "^3.0.6",
+    "vue-slick": "^1.1.15"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.8.0",
