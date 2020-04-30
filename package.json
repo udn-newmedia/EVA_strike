@@ -10,7 +10,7 @@
   "dependencies": {
     "babel-polyfill": "^6.26.0",
     "core-js": "^2.6.5",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "lodash.debounce": "^4.0.8",
     "lodash.throttle": "^4.1.1",
     "udn-newmedia-utils": "^1.1.0",
